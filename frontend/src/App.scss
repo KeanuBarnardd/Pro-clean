@@ -1,0 +1,41 @@
+// Use this to set all the general styling for your application.
+.app__container {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.app__container-width {
+  width: 95%;
+  max-width: 1100px;
+  // Smaller screen sizes make it 100%
+}
+
+.page {
+  padding-top: 3rem;
+}
+
+.app__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.p-text {
+}
+
+.head-text {
+}
+
+.btn {
+  &:hover {
+  }
+}
+
+.btn.btn-secondary {
+  &:hover {
+  }
+}
