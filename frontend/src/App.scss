@@ -1,4 +1,4 @@
-// Use this to set all the general styling for your application.
+//   Use this to set all the general styling for your application.
 .app__container {
   width: 100%;
   min-height: 100vh;
@@ -35,7 +35,27 @@
   }
 }
 
+.btn{
+  transition: all ease-in-out var(--timer-short);
+}
+
+
 .btn.btn-secondary {
+  color: white;
+  text-decoration: none;
+  background-color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 120px;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: center;
+  border-radius: var(--border-radius-1);
+
   &:hover {
+    background-color: white;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
   }
 }

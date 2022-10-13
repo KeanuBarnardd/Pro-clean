@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 /*Import this file into your project into the MAIN index component, so it can be accessed by every child. */
 
 :root {
@@ -22,13 +23,18 @@
   /*Custom-Main Colours to be changed to suit theme for website.*/
   --white-color: #fff;
   --primary-color: grey;
-  --secondary-color: #0f68a9;
-  --secondary-hover: #0f629e;
+  --secondary-color: #27913B;
+  --secondary-hover: #227e33;
   --secondary-color-light: #1c8fe244;
-  --accent-color: #7ef29d;
-  --accent-hover: #5eb876;
-  --gray-color: grey;
-  --black-color: black;
+  --accent-color: #E4BB30;
+  --accent-hover: #d1ab2d;
+  --gray-color: #B3B3B4;
+  --dark-grey-color:#52584E;
+  --black-color: #121115;
+
+  /*Custom Colour Pallete*/
+
+
 
   /*Set Colours*/
   --grey-100: #e9ecef;
@@ -89,5 +95,5 @@
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  font-family: "Titillium Web", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }

@@ -1,14 +1,20 @@
 import React, { useState } from "react";
 import { NavLink, Link } from "react-router-dom";
+import { images } from "../../Constants/images";
+import {MobileNavbar} from '../index';
+
 import "./Navbar.scss";
 
 const Navbar = () => {
   return (
     <nav className="app__flex navbar">
+      <MobileNavbar/>
       <div className="navbar__content app__container-width">
-        <Link to={"/"} className="home-link">
-          ProClean
-        </Link>
+        <div className="main__container">
+          <Link to={"/"} className="home-link">
+            <img src={images.logoGreenSmall} />
+          </Link>
+        </div>
         <div className="nav__links">
           <div className="navigation">
             <NavLink className="nav-link" to={"/services"}>
@@ -39,7 +45,6 @@ const Navbar = () => {
               </Link>
             </div>
           </div>
-
           <NavLink className="nav-link" to={"/about"}>
             About
           </NavLink>

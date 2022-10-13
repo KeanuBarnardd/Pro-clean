@@ -1,13 +1,24 @@
 nav {
-  background-color: red;
-  .navbar__content {
-    position: fixed;
-    top: 0;
+  position: fixed;
+  width: 100%;
+  box-shadow: var(--box-shadow-5);
 
+  .navbar__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 0px;
+    padding: 1.1rem 0px;
+    @media screen and (max-width: 600px) {
+      // HIDE and swap to 
+      display: none;
+    }
+    .home-link {
+      display: flex;
+      align-items: center;
+      img {
+        width: 120px;
+      }
+    }
 
     .nav__links {
       display: flex;
@@ -17,8 +28,10 @@ nav {
       .navigation {
         display: flex;
         align-items: center;
+        z-index: 3;
         .sub-nav {
           display: none;
+          opacity: 0;
           transition: all ease-in var(--timer-short);
         }
       }
@@ -29,22 +42,27 @@ nav {
         .sub-nav {
           display: flex;
           position: absolute;
-          top: 38px;
+          top: 36px;
           width: 450px;
-
+          opacity: 1;
+          background-color: white;
           box-shadow: var(--box-shadow-1);
           border-radius: var(--border-radius-1);
+          animation: fade-in 0.6s forwards;
+
           div {
             display: flex;
             flex-direction: column;
             width: 100%;
             padding: 0.8rem;
             .sub-nav-link {
+              font-size: 0.9rem;
               display: flex;
               align-items: center;
               gap: 8px;
               width: 100%;
               padding: 0.2rem;
+              padding-left: 0.5rem;
               color: var(--grey-500);
               text-decoration: none;
               transition: all ease-in-out var(--timer-short);
@@ -98,10 +116,9 @@ nav {
   display: flex;
   align-items: center;
   gap: 3px;
-  font-size: 1.1rem;
-  padding: 0.3rem 0.7rem 0.1rem 0.7rem;
+  font-size: 0.9rem;
+  padding: 0.3rem 0.7rem 0.4rem 0.7rem;
 
-  font-weight: 500;
   text-decoration: none;
   transition: all ease-in-out var(--timer-short);
   color: var(--grey-500);
@@ -115,4 +132,14 @@ nav {
 .nav-link.active {
   color: var(--secondary-color);
   border-bottom: 2px solid var(--secondary-color);
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
