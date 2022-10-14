@@ -1,0 +1,7 @@
+.home__services-section {
+  .home__services-grid {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+}
