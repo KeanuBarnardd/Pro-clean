@@ -4,7 +4,7 @@ import { images } from "../../Constants/images";
 import "./MobileNavbar.scss";
 
 const MobileNavbar = () => {
-  const [toggleMobileNav, setToggleMobileNav] = useState(true);
+  const [toggleMobileNav, setToggleMobileNav] = useState(false);
   const [toggleSubMenu, setToggleSubMenu] = useState(false);
 
   const toggleNav = () => {
