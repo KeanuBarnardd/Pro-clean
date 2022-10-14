@@ -1,10 +1,9 @@
 //   Use this to set all the general styling for your application.
 .app__container {
-  width: 100%;
-  min-height: 100vh;
-
+  padding: 7rem 0rem;
   display: flex;
   flex-direction: row;
+  width: 100%;
 }
 
 .app__container-width {
@@ -14,7 +13,7 @@
 }
 
 .page {
-  padding-top: 3rem;
+  padding-top: 140px;
 }
 
 .app__flex {
@@ -23,8 +22,14 @@
   align-items: center;
 }
 
-
 .p-text {
+  span{
+    font-weight: bold;
+  }
+}
+
+.content__title{
+  
 }
 
 .head-text {
@@ -35,10 +40,10 @@
   }
 }
 
-.btn{
+.btn {
   transition: all ease-in-out var(--timer-short);
+  cursor: pointer;
 }
-
 
 .btn.btn-secondary {
   color: white;

@@ -21,18 +21,20 @@ const App = () => {
   return (
     <BrowserRouter>
       <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="services" element={<Services />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="about" element={<About />} />
-        <Route path="booking" element={<Booking />} />
-        <Route path="pricing" element={<Pricing />} />
-        <Route path="commercialCleaning" element={<CommercialCleaning />} />
-        <Route path="homeCleaning" element={<HomeCleaning />} />
-        <Route path="leaseCleaning" element={<LeaseCleaning />} />
-        <Route path="upholsteryCleaning" element={<UpholsteryCleaning />} />
-      </Routes>
+      <div className="page">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="services" element={<Services />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="about" element={<About />} />
+          <Route path="booking" element={<Booking />} />
+          <Route path="pricing" element={<Pricing />} />
+          <Route path="commercialCleaning" element={<CommercialCleaning />} />
+          <Route path="homeCleaning" element={<HomeCleaning />} />
+          <Route path="leaseCleaning" element={<LeaseCleaning />} />
+          <Route path="upholsteryCleaning" element={<UpholsteryCleaning />} />
+        </Routes>
+      </div>
     </BrowserRouter>
   );
 };
