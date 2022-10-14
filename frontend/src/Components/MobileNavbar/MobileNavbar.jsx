@@ -13,31 +13,68 @@ const MobileNavbar = () => {
 
   return (
     <div className="mobile__nav app__container-width">
+      
       <div className="mobile__nav-top">
         <Link to={"/"} className="home-link">
           <img src={images.logoGreenSmall} />
         </Link>
         <button
+          className=""
           onClick={() => {
             toggleNav();
+            setToggleSubMenu(false);
           }}
         >
-          X
+          <i className={`fa-solid fa-x x-icon${toggleMobileNav ? "active" : ""}`}></i>
+          <i className={`fa-solid fa-bars bar-icon ${toggleMobileNav ? "" : "active"}`}></i>
         </button>
       </div>
       <div className={`mobile__navigation ${toggleMobileNav ? "active" : ""}`}>
-        <NavLink className="mobile-nav-link" to={"/about"}>
+        <NavLink
+          onClick={() => {
+            setToggleMobileNav(false);
+          }}
+          className="mobile-nav-link"
+          to={"/about"}
+        >
           <p>About</p>
         </NavLink>
-        <NavLink className="mobile-nav-link" to={"/contact"}>
+        <NavLink
+          onClick={() => {
+            setToggleMobileNav(false);
+          }}
+          className="mobile-nav-link"
+          to={"/contact"}
+        >
           <p>Contact</p>
         </NavLink>
-        <NavLink className="mobile-nav-link" to={"/pricing"}>
+        <NavLink
+          onClick={() => {
+            setToggleMobileNav(false);
+          }}
+          className="mobile-nav-link"
+          to={"/pricing"}
+        >
           <p>Pricing</p>
+        </NavLink>
+        <NavLink
+          onClick={() => {
+            setToggleMobileNav(false);
+          }}
+          className="mobile-nav-link"
+          to={"/booking"}
+        >
+          <p>Booking</p>
         </NavLink>
         <div className={`mobile__sub-nav ${toggleSubMenu ? "active" : ""}`}>
           <div className="services__btn">
-            <NavLink to={"services"} className="mobile-nav-link">
+            <NavLink
+              onClick={() => {
+                setToggleMobileNav(false);
+              }}
+              to={"services"}
+              className="mobile-nav-link service"
+            >
               Services
             </NavLink>
             <button
@@ -45,20 +82,48 @@ const MobileNavbar = () => {
                 toggleSubMenu ? setToggleSubMenu(false) : setToggleSubMenu(true);
               }}
             >
-              {toggleSubMenu ? <i className="fa-solid fa-chevron-up"></i> : <i className="fa-solid fa-chevron-down"></i> }
+              {toggleSubMenu ? (
+                <i className="fa-solid fa-chevron-up"></i>
+              ) : (
+                <i className="fa-solid fa-chevron-down"></i>
+              )}
             </button>
           </div>
           <div className={`sub__nav-list ${toggleSubMenu ? "active" : ""}`}>
-            <Link className="sub-nav-link" to={"/commercialCleaning"}>
+            <Link
+              onClick={() => {
+                setToggleMobileNav(false);
+              }}
+              className="sub-nav-link mobile"
+              to={"/commercialCleaning"}
+            >
               <p> Commercial Cleaning</p>
             </Link>
-            <Link className="sub-nav-link" to={"/homeCleaning"}>
+            <Link
+              onClick={() => {
+                setToggleMobileNav(false);
+              }}
+              className="sub-nav-link mobile"
+              to={"/homeCleaning"}
+            >
               <p>Home cleaning</p>
             </Link>
-            <Link className="sub-nav-link" to={"/leaseCleaning"}>
+            <Link
+              onClick={() => {
+                setToggleMobileNav(false);
+              }}
+              className="sub-nav-link mobile"
+              to={"/leaseCleaning"}
+            >
               <p>Lease cleaning</p>
             </Link>
-            <Link className="sub-nav-link" to={"/upholsteryCleaning"}>
+            <Link
+              onClick={() => {
+                setToggleMobileNav(false);
+              }}
+              className="sub-nav-link mobile"
+              to={"/upholsteryCleaning"}
+            >
               <p> Upholstery cleaning</p>
             </Link>
           </div>

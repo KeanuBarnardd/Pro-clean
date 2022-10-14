@@ -1,8 +1,7 @@
 // Local Variables
-$gap: 0px; // Gap size between all links
+$gap: 3px; // Gap size between all links
 
-// Link Styles
-.sub-nav-link,
+.sub-nav-link.mobile,
 .mobile-nav-link {
   display: flex;
   justify-content: center;
@@ -10,10 +9,38 @@ $gap: 0px; // Gap size between all links
   color: var(--grey-500);
   padding: 0.3rem;
   border-bottom: 1px solid var(--grey-200);
+  background-color: var(--grey-100);
+  transition: ease-in-out all var(--timer-short);
+  border-radius: 5px;
 }
 
-.sub-nav-link {
+.mobile-nav-link.service {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.mobile-nav-link {
+  &:hover {
+    background-color: var(--grey-300);
+    border-color: var(--grey-400);
+    color: white;
+  }
+}
+
+.mobile-nav-link.active {
+  background-color: var(--secondary-color);
+  border-color: var(--secondary-hover);
+  color: white;
+}
+
+.sub-nav-link.mobile {
   border-bottom: 1px solid var(--grey-300);
+  background-color: var(--grey-200);
+  &:hover {
+    background-color: var(--grey-300);
+    color: white;
+    border-color: white;
+  }
 }
 
 .mobile__nav {
@@ -29,6 +56,25 @@ $gap: 0px; // Gap size between all links
         width: 100px;
       }
     }
+    button {
+      border: none;
+      background: white;
+      color: var(--secondary-color);
+      font-size: 2rem;
+      padding-right: 0.2rem;
+      cursor: pointer;
+      .x-icon,
+      .bar-icon {
+        display: none;
+        animation: fadeIn 0.7s forwards;
+        transition: ease-in-out all var(--timer-short);
+      }
+      .x-icon.active,
+      .bar-icon.active {
+        display: flex;
+        animation: fadeIn 0.7s f;
+      }
+    }
   }
 
   .mobile__navigation {
@@ -42,7 +88,6 @@ $gap: 0px; // Gap size between all links
     flex-direction: column;
     gap: $gap;
     width: 100%;
-    background-color: var(--grey-100);
     text-align: center;
 
     .mobile__sub-nav {
@@ -60,6 +105,19 @@ $gap: 0px; // Gap size between all links
         }
         button {
           width: 100%;
+          background-color: var(--grey-200);
+          border: none;
+          cursor: pointer;
+          animation: fadeIn 0.7s forwards;
+          border-radius: 5px;
+          border-top-left-radius: 0px;
+          border-top-right-radius: 0px;
+          margin-bottom: 3px;
+          &:hover {
+            background-color: var(--grey-300);
+            color: white;
+            border-color: white;
+          }
         }
       }
 
@@ -73,10 +131,6 @@ $gap: 0px; // Gap size between all links
         flex-direction: column;
         gap: $gap;
       }
-    }
-
-    .mobile__sub-nav.active {
-      background-color: var(--grey-200);
     }
   }
 
@@ -92,5 +146,14 @@ $gap: 0px; // Gap size between all links
 
   100% {
     opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
   }
 }
