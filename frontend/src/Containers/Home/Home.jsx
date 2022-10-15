@@ -33,11 +33,36 @@ const Home = () => {
             <InfoCard
               title={"Domestic Cleaning"}
               image={images.domesticInfoCard}
+              symbol={"fa-solid fa-broom"}
               content={
                 <p className="p-text">
                   We provide complete home cleaning including kitchen, washrooms, bedrooms, balcony
                   and living rooms along with customised cleaning. We give top <span>quality</span>{" "}
                   services and customer support.
+                </p>
+              }
+              link={"/homeCleaning"}
+            />
+            <InfoCard
+              title={"Commercial Cleaning"}
+              image={images.commercialInfoCard}
+              symbol={"fa-solid fa-soap"}
+              content={
+                <p className="p-text">
+                  We have out-of-business hours cleaning options, all our professionals are{" "}
+                  <span>police checked</span> and insured. All our cleaning essentials are
+                  chemical-free. We provide <span>special</span> offers for our regular customers.
+                </p>
+              }
+              link={"/homeCleaning"}
+            />
+            <InfoCard
+              title={"Upholstery restoration"}
+              image={images.upholstCleanInfo}
+              symbol={"fa-solid fa-chair"}
+              content={
+                <p className="p-text">
+                  Keeping care of your expensive home wares is apart of our misson to provide the <span>complete service.</span>  Pet damages, general wear and tear or stains. We can get the job done, we even have membership options.
                 </p>
               }
               link={"/homeCleaning"}
