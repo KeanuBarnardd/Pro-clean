@@ -8,6 +8,9 @@ import domesticInfoCard from "./domesticCleanInfo.jpg";
 import commercialInfoCard from "./commercialCleanInfo.jpg";
 import upholstCleanInfo from "./UpholstCleanInfo.jpg";
 
+//About Images
+import aboutImage from "./aboutImage.jpg";
+
 export default {
   logoGreen,
   logoGreenSmall,
@@ -16,4 +19,5 @@ export default {
   domesticInfoCard,
   commercialInfoCard,
   upholstCleanInfo,
+  aboutImage,
 };
