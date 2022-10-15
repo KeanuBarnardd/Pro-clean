@@ -1,57 +1,62 @@
-.about__container {
-  .about__container-content {
+.about__container-content {
+  display: flex;
+  gap: 30px;
+  margin-top: 3rem;
+
+  @media screen and (max-width: 800px) {
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  p {
+    width: 100%;
+  }
+
+  .about__content-right {
     display: flex;
-    gap: 30px;
-    margin-top: 3rem;
-
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
     @media screen and (max-width: 800px) {
-      flex-direction: column;
-      margin-top: 1rem;
+      box-shadow: none;
     }
-
-    p {
+    img {
       width: 100%;
-    }
+      height: 300px;
+      margin-top: 2rem;
+      background-position: center;
+      background-size: cover;
+      border-radius: var(--border-radius-1);
+      box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
+        var(--secondary-fade) 20px -20px;
 
-    .about__content-right {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      width: 100%;
       @media screen and (max-width: 800px) {
         box-shadow: none;
       }
-      img {
-        width: 100%;
-        height: 300px;
-        margin-top: 2rem;
-        background-position: center;
-        background-size: cover;
-        border-radius: var(--border-radius-1);
-        box-shadow: blue 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px,
-          var(--secondary-fade) 20px -20px;
+    }
 
-        @media screen and (max-width: 800px) {
-          box-shadow: none;
+    .about__content-right-stats {
+      display: grid;
+      gap: 10px;
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+      .feature__box {
+        padding: 0.7rem;
+        h1 {
+          font-size: 1.4rem;
         }
-      }
-
-      .about__content-right-stats {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-        .feature__box {
-          padding: 0.7rem;
-          h1 {
-            font-size: 1.4rem;
-          }
-          p {
-            text-align: center;
-            line-height: 20px;
-            font-size: 0.9rem;
-          }
+        p {
+          text-align: center;
+          line-height: 20px;
+          font-size: 0.9rem;
         }
       }
     }
   }
+}
+
+.mission__grid {
+  margin-top: 3rem;
+  display: grid;
+  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }

@@ -42,21 +42,4 @@
       color: var(--secondary-color);
     }
   }
-
-  .hr__container {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    width: 90px;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    i {
-      color: var(--dark-grey-color);
-    }
-    hr {
-      width: 100%;
-      border: none;
-      border-top: 5px solid var(--dark-grey-color);
-    }
-  }
 }

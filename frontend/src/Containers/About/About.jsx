@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Banner, FeatureBox } from "../../Components/index";
+import { Header, Banner, FeatureBox, MissionCard } from "../../Components/index";
 import { images } from "../../Constants/images";
 
 import "./About.scss";
@@ -25,7 +25,7 @@ const About = () => {
         />
       </div>
       <div className="app__container app__flex">
-        <div className="app__container-width about__container">
+        <div className="app__container-width">
           <p className="content__title">
             <span>About ProCleaners</span>
           </p>
@@ -84,15 +84,45 @@ const About = () => {
         }
       />
       <div className="app__container app__flex">
-        <div className="app__container-width mission__container">
+        <div className="app__container-width">
           <p className="content__title">
-            <span>
-              Mission Statement
-            </span>
+            <span>Mission Statement</span>
           </p>
           <h1 className="head-text">Objectives as a company</h1>
           <div className="mission__grid">
-            
+            <MissionCard
+              title={"Goals"}
+              icon={"fa-trophy"}
+              content={
+                <p className="p-text">
+                  We use innovation where it works and individuals where it is important. Through
+                  development and implementation, we can give a top-notch on request reaction to
+                  your remarkable cleaning needs.{" "}
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Vission"}
+              icon={"fa-eye"}
+              content={
+                <p className="p-text">
+                  We think cleaning administrations could be given in a more phenomenal manner.
+                  Clients are pretty much as significant as the professionals and this works on the
+                  quality we offer in our services.{" "}
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Mission"}
+              icon={"fa-flag"}
+              content={
+                <p className="p-text">
+                  We help you by dealing with your home by offering an extraordinary assortment of
+                  cleaning services. We give home-grown and business cleaning services in Melbourne.
+                  Everything is finished by experts utilising top-notch hardware.{" "}
+                </p>
+              }
+            />
           </div>
         </div>
       </div>
