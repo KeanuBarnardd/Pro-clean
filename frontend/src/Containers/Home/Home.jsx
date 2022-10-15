@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, InfoCard } from "../../Components/index";
+import { Header, InfoCard, FeatureBox } from "../../Components/index";
 import { images } from "../../Constants/images";
 
 import "./Home.scss";
@@ -62,11 +62,45 @@ const Home = () => {
               symbol={"fa-solid fa-chair"}
               content={
                 <p className="p-text">
-                  Keeping care of your expensive home wares is apart of our misson to provide the <span>complete service.</span>  Pet damages, general wear and tear or stains. We can get the job done, we even have membership options.
+                  Keeping care of your expensive home wares is apart of our misson to provide the{" "}
+                  <span>complete service.</span> Pet damages, general wear and tear or stains. We
+                  can get the job done, we even have membership options.
                 </p>
               }
               link={"/homeCleaning"}
             />
+          </div>
+        </div>
+      </div>
+      <div className="app__container app__flex bg-grey">
+        <div className="app__container-width">
+          <p className="content__title">
+            <span>Features</span>
+          </p>
+          <h1 className="head-text">
+            Best quality cleaning services in Melbourne
+          </h1>
+          <div className="features__container">
+            <div className="features__content">
+              <h1 className="head-text">Over 1,000 satisfied customers</h1>
+              <p className="p-text">
+                When you live in such an amazing city as Melbourne you need a lot of time to enjoy
+                its beauty. That's why Pro Cleaners services are here to give you that time.you need a lot of time to enjoy
+                its beauty. That's why Pro Cleaners services are here to give you that time.
+              </p>
+              <button className="btn btn-secondary">Book a clean</button>
+            </div>
+            <div className="features__grid">
+              
+              <div className="col">
+                <FeatureBox text={"Average Rating"} number={"4.9"} color="light-green" />
+                <FeatureBox text={"Our cleaners"} number={"32"} color="white" />
+              </div>
+              <div className="col col-2">
+                <FeatureBox text={"Success Rate"} number={"90%"} color="" />
+                <FeatureBox text={"Avg Price Tag"} number={"$80"} color="green" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

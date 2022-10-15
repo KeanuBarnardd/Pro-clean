@@ -16,6 +16,7 @@
 
 .page {
   padding-top: 126px;
+  z-index: -1;
 }
 
 .app__flex {
@@ -44,6 +45,10 @@
     color: var(--secondary-color);
     border-radius: var(--border-radius-1);
   }
+}
+
+.bg-grey{
+  background-color: var(--grey-100);
 }
 
 .head-text {

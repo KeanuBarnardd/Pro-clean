@@ -4,3 +4,4 @@ export { default as InfoCard } from "./InfoCard/InfoCard";
 export { default as Navbar } from "./Navbar/Navbar";
 export { default as MobileNavbar } from "./MobileNavbar/MobileNavbar";
 export { default as Header } from "./Header/Header";
+export { default as FeatureBox } from "./FeatureBox/FeatureBox";

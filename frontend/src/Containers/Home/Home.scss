@@ -1,8 +1,40 @@
-.home__services-section {
-  .home__services-grid {
-    display: grid;
-    gap: 22px;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    margin-top: 2rem;
+.home__services-grid {
+  display: grid;
+  gap: 22px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 2rem;
+
+  .features__content {
+    padding-top: 5rem;
+    width: 100%;
+    h1 {
+      text-align: left;
+    }
+    p {
+      margin-bottom: 0.8rem;
+      width: 100%;
+    }
+  }
+
+  .features__grid {
+    display: flex;
+    gap: 10px;
+    padding-top: 1rem;
+    width: 100%;
+    
+    justify-content: end;
+    .col {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 100%;
+    }
   }
 }
