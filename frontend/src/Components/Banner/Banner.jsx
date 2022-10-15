@@ -1,13 +1,19 @@
 import React from "react";
 import { images } from "../../Constants/images";
-
+import { Link } from "react-router-dom";
 import "./Banner.scss";
 
-const Banner = ({ button, title, text }) => {
+const Banner = ({ link, button, title, text }) => {
   return (
     <div className="app__flex banner">
-      <img src={images.logoGreen} alt="" />
-      <div className="app__container banner__content"></div>
+      <img src={images.logoSvg} alt="" />
+      <div className="app__container-width banner__content">
+        <h1 className="head-text">{title}</h1>
+        {text}
+        <Link className="btn btn-white" to={`${link}`}>
+          {button}
+        </Link>
+      </div>
     </div>
   );
 };

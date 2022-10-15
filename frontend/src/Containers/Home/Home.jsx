@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, InfoCard, FeatureBox } from "../../Components/index";
+import { Header, InfoCard, FeatureBox, Banner } from "../../Components/index";
 import { images } from "../../Constants/images";
 
 import "./Home.scss";
@@ -72,6 +72,17 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Banner
+        title={"Generate innovation but be transparent"}
+        button="View services"
+        text={
+          <p className="p-text">
+            Do you need a quality office clean or home cleaning once a week ? Or just one proper
+            general cleaning? Whatever you need Pro cleaners - Cleaning services will adapt exactly
+            to your needs.
+          </p>
+        }
+      />
       <div className="app__container app__flex bg-grey">
         <div className="app__container-width">
           <p className="content__title">
@@ -102,6 +113,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+    
     </>
   );
 };

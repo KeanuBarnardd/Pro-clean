@@ -47,7 +47,7 @@
   }
 }
 
-.bg-grey{
+.bg-grey {
   background-color: var(--grey-100);
 }
 
@@ -102,6 +102,24 @@
   &:hover {
     background-color: var(--secondary-color);
     border: 1px solid var(--secondary-color);
+    color: white;
+  }
+}
+
+.btn.btn-white {
+  background-color: white;
+  padding: 0.5rem 1rem;
+  max-width: 200px;
+  width: 100%;
+  text-decoration: none;
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+  border-radius: var(--border-radius-1);
+  color: var(--secondary-color);
+  text-align: center;
+  &:hover {
+    background-color: var(--secondary-color);
+    border: 1px solid white;
     color: white;
   }
 }

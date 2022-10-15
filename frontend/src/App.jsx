@@ -13,7 +13,7 @@ import {
   Pricing,
 } from "./Containers/index";
 
-import { Navbar } from "./Components/index";
+import { Navbar, Footer } from "./Components/index";
 
 import "./App.scss";
 
@@ -34,6 +34,7 @@ const App = () => {
           <Route path="leaseCleaning" element={<LeaseCleaning />} />
           <Route path="upholsteryCleaning" element={<UpholsteryCleaning />} />
         </Routes>
+        <Footer></Footer>
       </div>
     </BrowserRouter>
   );
