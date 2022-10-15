@@ -11,15 +11,27 @@
   gap: 30px;
   margin-top: 2rem;
 
+  @media screen and (max-width: 850px) {
+    flex-direction: column-reverse;
+  }
+
   .features__content {
     padding-top: 5rem;
     width: 100%;
+  
+
     h1 {
       text-align: left;
     }
     p {
       margin-bottom: 0.8rem;
       width: 100%;
+    }
+    @media screen and (max-width: 850px) {
+      padding-top: 0rem;
+      h1{
+        line-height: 38px;
+      }
     }
   }
 
@@ -28,7 +40,7 @@
     gap: 10px;
     padding-top: 1rem;
     width: 100%;
-    
+
     justify-content: end;
     .col {
       display: flex;

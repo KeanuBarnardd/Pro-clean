@@ -77,21 +77,19 @@ const Home = () => {
           <p className="content__title">
             <span>Features</span>
           </p>
-          <h1 className="head-text">
-            Best quality cleaning services in Melbourne
-          </h1>
+          <h1 className="head-text">Best quality cleaning services in Melbourne</h1>
           <div className="features__container">
             <div className="features__content">
               <h1 className="head-text">Over 1,000 satisfied customers</h1>
               <p className="p-text">
                 When you live in such an amazing city as Melbourne you need a lot of time to enjoy
-                its beauty. That's why Pro Cleaners services are here to give you that time.you need a lot of time to enjoy
-                its beauty. That's why Pro Cleaners services are here to give you that time.
+                its beauty. That's why Pro Cleaners services are here to give you that time.you need
+                a lot of time to enjoy its beauty. That's why Pro Cleaners services are here to give
+                you that time.
               </p>
               <button className="btn btn-secondary">Book a clean</button>
             </div>
             <div className="features__grid">
-              
               <div className="col">
                 <FeatureBox text={"Average Rating"} number={"4.9"} color="light-green" />
                 <FeatureBox text={"Our cleaners"} number={"32"} color="white" />
