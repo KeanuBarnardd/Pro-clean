@@ -61,10 +61,22 @@ const Services = () => {
                 <Tag color={"light-green"} icon={"fa-comments-dollar"} text="Free Quote" />
                 <Tag color={""} icon={"fa-comments-dollar"} text="Best Services" />
                 <Tag color={""} icon={"fa-comments-dollar"} text="On-time working" />
-                <Tag color={"light-green"} icon={"fa-comments-dollar"} text="24/7 Customer Support" />
+                <Tag
+                  color={"light-green"}
+                  icon={"fa-comments-dollar"}
+                  text="24/7 Customer Support"
+                />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <div className="app__flex app__container bg-grey">
+        <div className="app__container-width">
+          <p className="content__title">
+            <span>Included</span>
+          </p>
+          <h1 className="head-text">What does your cleaning package include</h1>
         </div>
       </div>
     </>
