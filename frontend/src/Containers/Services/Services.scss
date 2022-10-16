@@ -15,7 +15,6 @@
     @media screen and (max-width: 600px) {
       text-align: center;
     }
-  
   }
 
   h3 {
@@ -55,7 +54,6 @@
         display: none;
       }
     }
-    
   }
 
   .services__intro-grid {
@@ -63,4 +61,7 @@
     gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
+}
+.grid__container {
+  margin-top:4rem;
 }

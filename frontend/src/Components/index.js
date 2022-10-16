@@ -8,3 +8,4 @@ export { default as FeatureBox } from "./FeatureBox/FeatureBox";
 export { default as Banner } from "./Banner/Banner";
 export { default as MissionCard } from "./MissionCard/MissionCard";
 export { default as Tag } from "./Tag/Tag";
+export { default as GridItem } from "./GridItem/GridItem";

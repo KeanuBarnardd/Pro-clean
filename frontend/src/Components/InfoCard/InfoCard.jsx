@@ -24,7 +24,9 @@ const InfoCard = ({ symbol, image, title, content, link, button }) => {
           <hr />
         </div>
 
-        <Link className="btn btn-outline" to={link}>Find more</Link>
+        <Link className="btn btn-outline" to={link}>
+          Find more
+        </Link>
       </div>
     </div>
   );

@@ -140,3 +140,9 @@
     border-top: 5px solid var(--dark-grey-color);
   }
 }
+
+.grid__container{
+  display: grid;
+	gap:40px; 
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}

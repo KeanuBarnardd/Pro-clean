@@ -1,5 +1,5 @@
 import React from "react";
-import { Tag, Banner } from "../../Components/index";
+import { Tag, Banner, GridItem } from "../../Components/index";
 import { images } from "../../Constants/images";
 import "./Services.scss";
 
@@ -7,13 +7,14 @@ const Services = () => {
   return (
     <>
       <Banner
-        title={"Join with the best in Melbourne, Pro cleaners"}
-        button="Contact team"
-        link={"/contact"}
+        title={"Services"}
+        button="Home cleaning"
+        link={"/homeCleaning"}
         text={
           <p className="p-text">
-            Looking to work with our team, get in touch below so we can get your spring cleaning
-            done, every weekend. Get inspired with the best in Melbourne.
+            We cover an array of services from floor cleaning, mopping, surfaces, windows, rubbish
+            removal and more. If you want to learn more about what we do seek below for more
+            information.
           </p>
         }
       />
@@ -59,13 +60,9 @@ const Services = () => {
               <h3>There should be a reason to choose us.</h3>
               <div className="services__intro-grid">
                 <Tag color={"light-green"} icon={"fa-comments-dollar"} text="Free Quote" />
-                <Tag color={""} icon={"fa-comments-dollar"} text="Best Services" />
-                <Tag color={""} icon={"fa-comments-dollar"} text="On-time working" />
-                <Tag
-                  color={"light-green"}
-                  icon={"fa-comments-dollar"}
-                  text="24/7 Customer Support"
-                />
+                <Tag color={""} icon={"fa-bell-concierge"} text="Best Services" />
+                <Tag color={""} icon={"fa-clock"} text="On-time working" />
+                <Tag color={"light-green"} icon={"fa-headset"} text="24/7 Customer Support" />
               </div>
             </div>
           </div>
@@ -77,6 +74,74 @@ const Services = () => {
             <span>Included</span>
           </p>
           <h1 className="head-text">What does your cleaning package include</h1>
+          <p className="p-text">
+            Confused on what our cleaning packages containers, heres a guide to understanding what
+            you are buying when you work with ProCleaners Melbourne. We cover an array of areas from
+            surface cleaning, rubbish removal to industrial warehouse cleaning operations. There is
+            no job too big or too small for Pro Cleaners.{" "}
+          </p>
+          <div className="grid__container">
+            <GridItem
+              image={images.servicesImg1}
+              title={"Commercial & Industrial"}
+              content={
+                <p className="p-text">
+                  All aspects of commercial and industrial cleaning are done with ProCleaners. From
+                  office windows, to retail floors we use the best disinfectant and floor polish.
+                </p>
+              }
+            />
+            <GridItem
+              image={images.servicesImg2}
+              title={"Surfaces & Organising"}
+              content={
+                <p className="p-text">
+                  Our teams are cleaning every surface with commercial grade, no harmful chemicals
+                  cleaning products. We wipe, polish, disinfect and organise every area cleaned.
+                </p>
+              }
+            />
+            <GridItem
+              image={images.servicesImg3}
+              title={"Kitchens & Wet areas"}
+              content={
+                <p className="p-text">
+                  Taking the time to make sure your wet areas are sparkling clean for guests is what
+                  we do. We get out all the grit in every crevice, so your kitchens spotless.
+                </p>
+              }
+            />
+            <GridItem
+              image={images.servicesImg4}
+              title={"Mopping & Vacuuming"}
+              content={
+                <p className="p-text">
+                  Our domestic floor cleaning process is unmatched. We first sweep, then vacuum and
+                  finish with a nice floor polish mop to spice up your floorboards or tiles.
+                </p>
+              }
+            />
+            <GridItem
+              image={images.servicesImg6}
+              title={"Rubbish Removal"}
+              content={
+                <p className="p-text">
+                  We get rid of everything in your home that you don't need. We are eco friendly so
+                  we make sure everything is going where it needs to be.
+                </p>
+              }
+            />
+            <GridItem
+              image={images.servicesImg5}
+              title={"Window Cleaning"}
+              content={
+                <p className="p-text">
+                  Having a good view is key to a brigt home, so we take care of all your windows.
+                  Making sure they are cyrstal clear and smelling good is apart of our plan.
+                </p>
+              }
+            />
+          </div>
         </div>
       </div>
     </>
