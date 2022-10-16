@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import "./InfoCard.scss";
 
-const InfoCard = ({ symbol, image, title, content, link, button }) => {
+const InfoCard = ({ symbol, image, title, content, link, button, showHr }) => {
   return (
     <div className="info__card">
       <div className="info__card-img" style={{ backgroundImage: `url(${image})` }}>
@@ -18,15 +18,21 @@ const InfoCard = ({ symbol, image, title, content, link, button }) => {
         <h2>{title}</h2>
 
         {content}
-        <div className="hr__container">
-          <hr />
-          <i className="fa-solid fa-star"></i>
-          <hr />
-        </div>
+        {showHr ? (
+          <div className="hr__container">
+            <hr />
+            <i className="fa-solid fa-star"></i>
+            <hr />
+          </div>
+        ) : (
+          <></>
+        )}
 
-        <Link className="btn btn-outline" to={link}>
-          Find more
-        </Link>
+        {
+          <Link className="btn btn-outline" to={link}>
+            {button}
+          </Link>
+        }
       </div>
     </div>
   );

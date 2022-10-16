@@ -34,6 +34,7 @@ const Home = () => {
               title={"Domestic Cleaning"}
               image={images.domesticInfoCard}
               symbol={"fa-solid fa-broom"}
+              showHr={true}
               content={
                 <p className="p-text">
                   We provide complete home cleaning including kitchen, washrooms, bedrooms, balcony
@@ -42,11 +43,13 @@ const Home = () => {
                 </p>
               }
               link={"/homeCleaning"}
+              button={"Find more"}
             />
             <InfoCard
               title={"Commercial Cleaning"}
               image={images.commercialInfoCard}
               symbol={"fa-solid fa-soap"}
+              showHr={true}
               content={
                 <p className="p-text">
                   We have out-of-business hours cleaning options, all our professionals are{" "}
@@ -55,11 +58,13 @@ const Home = () => {
                 </p>
               }
               link={"/homeCleaning"}
+              button={"Find more"}
             />
             <InfoCard
               title={"Upholstery restoration"}
               image={images.upholstCleanInfo}
               symbol={"fa-solid fa-chair"}
+              showHr={true}
               content={
                 <p className="p-text">
                   Keeping care of your expensive home wares is apart of our misson to provide the{" "}
@@ -68,6 +73,7 @@ const Home = () => {
                 </p>
               }
               link={"/homeCleaning"}
+              button={"Find more"}
             />
           </div>
         </div>
@@ -113,7 +119,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-    
     </>
   );
 };

@@ -17,6 +17,11 @@ import servicesImg5 from "./servicesImg5.jpg";
 import servicesImg6 from "./servicesImg6.jpg";
 import servicesImg7 from "./servicesImg7.jpg";
 
+// Domestic Cleaning Images
+import houseSmall from "./houseSmall.jpg";
+import houseMed from "./houseMed.jpg";
+import houseLarge from "./houseLarge.jpg";
+
 //About Images
 import aboutImage from "./aboutImage.jpg";
 
@@ -36,4 +41,7 @@ export default {
   servicesImg5,
   servicesImg6,
   servicesImg7,
+  houseSmall,
+  houseMed,
+  houseLarge,
 };
