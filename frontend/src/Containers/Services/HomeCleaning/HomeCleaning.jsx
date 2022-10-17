@@ -113,22 +113,93 @@ const HomeCleaning = () => {
                   </p>
                   <div className="info__card-grid">
                     <p className="p-tag">
+                      <span>Max 4 Bed</span>
+                    </p>
+                    <p className="p-tag">
                       <span>Max 2 Bed</span>
                     </p>
                     <p className="p-tag">
-                      <span>Max 1 Bed</span>
+                      <span>Max 2 Garage</span>
                     </p>
                     <p className="p-tag">
-                      <span>Max 1 Garage</span>
-                    </p>
-                    <p className="p-tag">
-                      <span>Max 1 Outdoor</span>
+                      <span>Max 2y Outdoor</span>
                     </p>
                   </div>
                 </>
               }
               link={"/booking"}
               button={"Book now "}
+            />
+          </div>
+        </div>
+      </div>
+      <div className="app__flex app__container bg-grey">
+        <div className="app__container-width">
+          <p className="content__title">
+            <span>The Process</span>
+          </p>
+          <h1 className="head-text">How do we clean your home</h1>
+          <div className="grid__container home-cleaning">
+            <MissionCard
+              title={"Rubbish removal"}
+              icon={"fa-1"}
+              content={
+                <p className="p-text">
+                  First at <span>ProClean</span> we like to remove all the rubbish in the house-hold
+                  before we begin our clean. Making this the first priority is{" "}
+                  <span>essential</span> for a smooth cleaning process through out the rest of our
+                  procedure.
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Surfaces"}
+              icon={"fa-2"}
+              content={
+                <p className="p-text">
+                  Secondly we like to wipe down, tidy and clean all surfaces through-out the main
+                  areas- such a kitchens, bedrooms & living areas. Thus giving us a clean slate to
+                  begin our deep cleaning operations.
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Kitchen & Wet areas"}
+              icon={"fa-3"}
+              content={
+                <p className="p-text">
+                  Now we get down to the <span>nitty gritty</span> with the hard to clean locations.
+                  Kitchen and bathrooms need that extra care so we make sure we have all the time to
+                  polish, scrub and wash off all those residues.
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Windows & Mirrors"}
+              icon={"fa-4"}
+              content={
+                <p className="p-text">
+                 After that we like to go through and clean all the windows and mirros so everything is looking cyrstal clear for our home owners. 
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Final finishes"}
+              icon={"fa-5"}
+              content={
+                <p className="p-text">
+                  Going through the house with a final clean is essential to completing our home clean. We take the time to inspect each area and room and get any missed spots that have not yet been reached.
+                </p>
+              }
+            />
+            <MissionCard
+              title={"Vacuum & Mop"}
+              icon={"fa-6"}
+              content={
+                <p className="p-text">
+                  We leave the vacuuming and mopping to the end so we don't spend the clean walking through already cleaned floors. That way our home owner can walk in and be amazed by the over-all results.
+                </p>
+              }
             />
           </div>
         </div>

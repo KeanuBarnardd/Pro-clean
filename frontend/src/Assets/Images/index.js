@@ -22,6 +22,11 @@ import houseSmall from "./houseSmall.jpg";
 import houseMed from "./houseMed.jpg";
 import houseLarge from "./houseLarge.jpg";
 
+// Commercial Cleaning Images
+import officeSpace1 from "./officeSpace1.jpg";
+import retail1 from "./retail1.jpg";
+import industrial1 from "./industrial1.jpg";
+
 //About Images
 import aboutImage from "./aboutImage.jpg";
 
@@ -44,4 +49,7 @@ export default {
   houseSmall,
   houseMed,
   houseLarge,
+  officeSpace1,
+  retail1,
+  industrial1,
 };

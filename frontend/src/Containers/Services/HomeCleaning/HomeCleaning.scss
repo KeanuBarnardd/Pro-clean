@@ -4,10 +4,22 @@
   .info__card {
     .info__card-content {
     }
-    
+
     .btn {
       max-width: 100%;
       margin-top: 0.5rem;
+    }
+  }
+}
+.grid__container.home-cleaning {
+  margin-top: 0.5rem;
+  .mission__card {
+    .hr__container {
+      i {
+        background-color: var(--grey-100);
+        color: var(--secondary-color);
+        border-radius: 100%;
+      }
     }
   }
 }
