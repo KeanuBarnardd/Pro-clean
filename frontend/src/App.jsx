@@ -18,6 +18,12 @@ import { Navbar, Footer } from "./Components/index";
 import "./App.scss";
 
 const App = () => {
+
+
+
+
+
+
   return (
     <BrowserRouter>
       <Navbar />
