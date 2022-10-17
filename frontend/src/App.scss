@@ -147,3 +147,43 @@
 	gap:40px; 
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.row{
+  display: flex;
+  gap: 20px;
+}
+.input__container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  p{
+    font-size: 0.85rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.1rem;
+  }
+
+  input,textarea{
+    border: none;
+    border-bottom: 2px solid var(--grey-100);
+    padding: 0.2rem;
+    font-size: 0.9rem;
+    color: var(--grey-400);
+    margin-top: 0.1rem;
+    width: 100%;
+    resize: none;
+    outline: none;
+    transition: all ease-in-out var(--timer-short);
+  }
+
+  input:focus,textarea:focus{
+    border-color: var(--secondary-color);
+  }
+
+  textarea{
+    height: 130px;
+  }
+}
+
+.text-center{
+  text-align: center !important;
+}
