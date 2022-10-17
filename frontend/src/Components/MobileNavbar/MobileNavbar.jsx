@@ -13,9 +13,8 @@ const MobileNavbar = () => {
 
   return (
     <div className="mobile__nav app__container-width">
-      
       <div className="mobile__nav-top">
-        <Link to={"/"} className="home-link">
+        <Link to={"/home"} className="home-link">
           <img src={images.logoGreenSmall} />
         </Link>
         <button
@@ -47,15 +46,6 @@ const MobileNavbar = () => {
           to={"/contact"}
         >
           <p>Contact</p>
-        </NavLink>
-        <NavLink
-          onClick={() => {
-            setToggleMobileNav(false);
-          }}
-          className="mobile-nav-link"
-          to={"/pricing"}
-        >
-          <p>Pricing</p>
         </NavLink>
         <NavLink
           onClick={() => {

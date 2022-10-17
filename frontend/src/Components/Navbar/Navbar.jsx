@@ -16,8 +16,12 @@ const Navbar = () => {
             <a className="social__nav-link fa-brands fa-twitter" href=""></a>
           </div>
           <div>
-            <p className="social__nav-contact-info"> <i className="fa-solid fa-phone"></i>+0432 846 256</p>
-            <p className="social__nav-contact-info"> <i className="fa-solid fa-envelope"></i> proClean@melbprocleaners.com.au</p>
+            <p className="social__nav-contact-info">
+              <i className="fa-solid fa-phone"></i>+0432 846 256
+            </p>
+            <p className="social__nav-contact-info">
+              <i className="fa-solid fa-envelope"></i> proClean@melbprocleaners.com.au
+            </p>
           </div>
         </div>
       </div>
@@ -25,13 +29,16 @@ const Navbar = () => {
         <MobileNavbar />
         <div className="navbar__content app__container-width">
           <div className="main__container">
-            <Link to={"/"} className="home-link">
+            <Link to={"/"} exact={true} end className="home-link">
               <img src={images.logoGreenSmall} />
             </Link>
           </div>
           <div className="nav__links">
+            <NavLink className="nav-link" end to={"/"}>
+              Home
+            </NavLink>
             <div className="navigation">
-              <NavLink className="nav-link" to={"/services"}>
+              <NavLink className="nav-link" to={"services"}>
                 Services
                 <i className="fa-solid fa-chevron-down"></i>
               </NavLink>
@@ -64,9 +71,6 @@ const Navbar = () => {
             </NavLink>
             <NavLink className="nav-link" to={"/contact"}>
               Contact
-            </NavLink>
-            <NavLink className="nav-link" to={"/pricing"}>
-              Pricing
             </NavLink>
           </div>
           <Link className="btn btn-secondary" to={"/booking"}>
