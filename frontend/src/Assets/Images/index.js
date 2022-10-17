@@ -27,6 +27,10 @@ import officeSpace1 from "./officeSpace1.jpg";
 import retail1 from "./retail1.jpg";
 import industrial1 from "./industrial1.jpg";
 
+// Lease Cleaning Images
+import lease1 from "./leaseHouse1.jpg";
+import lease2 from "./leaseHouse2.jpg";
+
 //About Images
 import aboutImage from "./aboutImage.jpg";
 
@@ -52,4 +56,6 @@ export default {
   officeSpace1,
   retail1,
   industrial1,
+  lease1,
+  lease2,
 };
