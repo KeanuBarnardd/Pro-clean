@@ -1,28 +1,12 @@
 import React from "react";
-import { Header } from "../../Components/index";
+import { Header , Banner} from "../../Components/index";
 import { images } from "../../Constants/images";
 import "./Contact.scss";
 
 const Contact = () => {
   return (
     <>
-      <div className="app__flex">
-        <Header
-          image={images.headerKitchenGreen}
-          content={
-            <>
-              <h1>Professional and Affordable cleaning services in Melbourne.</h1>
-              <p className="p-text">
-                Here at ProCleaners we specialise in <span>commercial</span> , <span>domestic</span>{" "}
-                and <span>upholstery restoration.</span> Get to know our Melbourne family, contact
-                below.
-              </p>
-              <button className="btn btn-secondary btn-header">Book a Clean</button>
-            </>
-          }
-        />
-      </div>
-      <div className="app__flex app__container">
+      <div className="app__flex app__container contact ">
         <div className="app__container-width">
           <p className="content__title">
             <span>contact</span>
@@ -47,7 +31,7 @@ const Contact = () => {
               </div>
               <div className="socials__container">
                 <i className="fa-solid fa-location-dot"></i>
-                <p className="p-text">Melbourne, Hoppers Crossing</p>
+                <p className="p-text">Melbourne, Hoppers Crossing 3029</p>
               </div>
               <img src={images.logoSvg} alt="" />
             </div>
