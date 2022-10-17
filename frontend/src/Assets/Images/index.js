@@ -31,6 +31,11 @@ import industrial1 from "./industrial1.jpg";
 import lease1 from "./leaseHouse1.jpg";
 import lease2 from "./leaseHouse2.jpg";
 
+// Upholstery Cleaning
+import chair1 from "./chair1.jpg";
+import chairWood from './chairWood.jpg';
+import table from './table.jpg';
+import bed from './bed.jpg';
 //About Images
 import aboutImage from "./aboutImage.jpg";
 
@@ -58,4 +63,8 @@ export default {
   industrial1,
   lease1,
   lease2,
+  chair1,
+  chairWood,
+  table,
+  bed
 };
