@@ -1,18 +1,18 @@
 import React, { useState } from "react";
-
+import { DetailsForm, UserForm, PaymentForm, DateForm } from "../../index";
 import "./Booking.scss";
 
 const Booking = () => {
-  const [priceArrays, setpriceArrays] = useState({
+  const [priceArrays, setPriceArrays] = useState({
     stories: [0, 100, 200, 300, 400],
     rooms: [0, 75, 150, 225, 300, 375, 450, 525, 600],
     baths: [0, 50, 100, 150, 200, 250, 300, 350, 400],
   });
 
   const [valueArrays, setValueArrays] = useState({
-    stories: [0, 1, 2, 3, 4],
-    rooms: [0, 1, 2, 3, 4, 5, 6, 7, 8],
-    baths: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    stories: [1, 2, 3, 4],
+    rooms: [1, 2, 3, 4, 5, 6, 7, 8],
+    baths: [1, 2, 3, 4, 5, 6, 7, 8],
   });
 
   const [propertyPriceData, setPropertyPriceData] = useState({
@@ -28,7 +28,7 @@ const Booking = () => {
     wallWashPrice: 0,
     blindsPrice: 0,
   });
-
+  // Component 1 - Pass this down as a prop so we can access it in component 2 
   const [propertyData, setPropertyData] = useState({
     stories: 0,
     beds: 0,
@@ -50,7 +50,7 @@ const Booking = () => {
     propertyType: "",
     powerAvailable: "",
   });
-  
+
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
@@ -64,7 +64,24 @@ const Booking = () => {
 
   const [priceTotal, setPriceTotal] = useState(0);
 
-  return <div>Booking</div>;
+  return (
+    <>
+      <div className="app__container app__flex">
+        <div className="app__container-width">
+          <DetailsForm
+            priceArrays={priceArrays}
+            setPriceArray={setPriceArrays}
+            valueArrays={valueArrays}
+            setValueArrays={setValueArrays}
+            propertyPriceData={propertyPriceData}
+            setPropertyPriceData={setPropertyPriceData}
+            propertyData={propertyData}
+            setPropertyData={setPropertyData}
+          />
+        </div>
+      </div>
+    </>
+  );
 };
 
 export default Booking;

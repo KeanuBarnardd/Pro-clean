@@ -29,12 +29,12 @@ const Navbar = () => {
         <MobileNavbar />
         <div className="navbar__content app__container-width">
           <div className="main__container">
-            <Link to={"/"} exact={true} end className="home-link">
+            <Link to={"/"}  end="true" className="home-link">
               <img src={images.logoGreenSmall} />
             </Link>
           </div>
           <div className="nav__links">
-            <NavLink className="nav-link" end to={"/"}>
+            <NavLink className="nav-link" end="true" to={"/"}>
               Home
             </NavLink>
             <div className="navigation">
