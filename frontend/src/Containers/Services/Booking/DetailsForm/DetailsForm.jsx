@@ -73,9 +73,69 @@ const DetailsForm = ({
             <span>Inclusions</span>
           </p>
           <div className="inclusions__container">
-            <Dropdown title={"Bedrooms"} content={<p className="p-text">Hello this a test</p>} />
-            <Dropdown title={"Bedrooms"} content={<p className="p-text">Hello this a test</p>} />
-            <Dropdown title={"Bedrooms"} content={<p className="p-text">Hello this a test</p>} />
+            <Dropdown
+              title={"Bathrooms"}
+              content={
+                <div className="dropdown__grid">
+                  <li>Cleaning of all tiled floors</li>
+                  <li>Clean mirrors & glass surfaces</li>
+                  <li>Clean all tile surfaces</li>
+                  <li>Clean bathtub, shower & toilet</li>
+                  <li>Clean inside all joinery & cupboards</li>
+                  <li>Clean all door & window frames</li>
+                </div>
+              }
+            />
+            <Dropdown
+              title={"Bedrooms/Entrance/Living"}
+              content={
+                <div className="dropdown__grid">
+                  <li>Clean Fixtures(switches/doorbell/handles/locks)</li>
+                  <li>Clean high touch areas </li>
+                  <li>Clean all electrical outlets & switches</li>
+                  <li>Clean all door and window frames</li>
+                  <li>Vacuum/mop flooring (as required)</li>
+                </div>
+              }
+            />
+            <Dropdown
+              title={"Kitcehn/Laundry"}
+              content={
+                <div className="dropdown__grid">
+                  <li>Degrease and wipe down all surfaces</li>
+                  <li>Clean external cupboards/handles </li>
+                  <li>Clean all sinks and taps</li>
+                  <li>Clean all appliances including dishwasher</li>
+                  <li>Full detail of stove top</li>
+                  <li>Full detail of exhaust fan/range hood</li>
+                  <li>Full detail of splash backs</li>
+                  <li>Clean high touch areas</li>
+                  <li>Clean light fittings where accessible</li>
+                </div>
+              }
+            />
+            <Dropdown
+              title={"Oven"}
+              content={
+                <div className="dropdown__grid">
+                  <li>Oven cleaned using proper oven cleaner</li>
+                  <li>Internal clean of oven/grill including glass </li>
+                  <li>All grease/grime and evidence of use is removed</li>
+                  <li>Degrease and clean grill and grill plates</li>
+                  <li>Wipe down and clean on front of oven</li>
+                </div>
+              }
+            />
+            <Dropdown
+              title={"Pantry/Cupboards"}
+              content={
+                <div className="dropdown__grid">
+                  <li>Clean all shelves</li>
+                  <li>Clean all drawers </li>
+                  <li>Clean all doors/handles</li>
+                </div>
+              }
+            />
           </div>
         </div>
         <div className="extras__container">

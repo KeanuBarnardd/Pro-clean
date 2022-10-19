@@ -1,11 +1,25 @@
 .dropdown__container {
-
-
-  .dropdown__top-row{
+  .dropdown__top-row {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: violet;
+    padding-bottom: 0.3rem;
+    align-items: center;
+    cursor: pointer;
+    p {
+      color: var(--grey-700);
+      cursor: pointer;
+    }
+    .dropdown__btn {
+      border: none;
+      padding: 0.2rem;
+      width: 100%;
+      max-width: 50px;
+      border-radius: 5px;
+    }
+  }
+  hr {
+    border-color: var(--grey-000);
   }
 
   .dropdown__container {
@@ -14,7 +28,16 @@
 
   .dropdown__container.active {
     display: flex;
-    flex-direction: column;
-    
+    .dropdown__grid {
+      display: grid;
+      gap: 0px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      li{
+        list-style-position: inside;
+        font-size: 0.9rem;
+        color: var(--grey-400);
+        background-color: var(--g);
+      }
+    }
   }
 }

@@ -7,19 +7,25 @@ const Dropdown = ({ title, content }) => {
 
   return (
     <div className="dropdown__container">
-      <div className="dropdown__top-row">
-        <h2>{title}</h2>
-        <button
-          className="btn btn-secondary"
-          onClick={() => {
-            toggle ? setToggle(false) : setToggle(true);
-          }}
-        >
-          <i className="fa-solid fa-chevron-down"></i>
+      <div
+        onClick={() => {
+          toggle ? setToggle(false) : setToggle(true);
+        }}
+        className="dropdown__top-row"
+      >
+        <p>{title}</p>
+        <button className="btn dropdown__btn">
+          {toggle ? (
+            <i className="fa-solid fa-chevron-up"></i>
+          ) : (
+            <i className="fa-solid fa-chevron-down"></i>
+          )}
         </button>
       </div>
-
-      <div className={`dropdown__container ${toggle ? "active" : ""}`}>{content}</div>
+      <hr />
+      <div className={`dropdown__container ${toggle ? "active" : ""}`}>{content}
+          
+      </div>
     </div>
   );
 };
