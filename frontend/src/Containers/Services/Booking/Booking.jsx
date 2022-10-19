@@ -15,12 +15,12 @@ const Booking = () => {
 
   const [valueArrays, setValueArrays] = useState({
     stories: [1, 2, 3, 4],
-    rooms: [ 1, 2, 3, 4, 5, 6, 7, 8],
+    rooms: [1, 2, 3, 4, 5, 6, 7, 8],
     baths: [1, 2, 3, 4, 5, 6, 7, 8],
     // Sub Categories
     blinds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     walls: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
-    carpets: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+    carpets: [0, 1, 2, 3, 4, 5, 6, 7, 8],
   });
 
   const [propertyPriceData, setPropertyPriceData] = useState({
@@ -88,7 +88,11 @@ const Booking = () => {
           />
         </div>
       </div>
-    
+      <div className="app__container app__flex">
+        <div className="app__container-width">
+          <DateForm/>
+        </div>
+      </div>
     </>
   );
 };
