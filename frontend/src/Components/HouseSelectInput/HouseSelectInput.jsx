@@ -5,14 +5,13 @@ import "./HouseSelectInput.scss";
 const HouseSelectInput = ({
   priceArrays,
   valueArrays,
-  propertyPriceData,
   setPropertyPriceData,
-  propertyData,
   setPropertyData,
   valueType, // Is the type of Value we are changing eg. Room or Baths.
   typePrice, // Co-dependant on value Type- How much each value costs
   textValue,
   addMultiple,
+  styleType,
 }) => {
   const getSelectValue = (e) => {
     setPropertyData((data) => ({
@@ -31,7 +30,7 @@ const HouseSelectInput = ({
   };
 
   return (
-    <select onChange={getSelectValue}>
+    <select className={`${styleType}`} onChange={getSelectValue}>
       {valueArrays[valueType].map((item, id) => (
         <option key={id} value={item}>
           {item} {addMultiple && item !== 1 ? textValue + "s" : textValue}

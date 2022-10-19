@@ -7,12 +7,20 @@ const Booking = () => {
     stories: [100, 200, 300, 400],
     rooms: [75, 150, 225, 300, 375, 450, 525, 600],
     baths: [75, 150, 225, 300, 375, 450, 525, 600],
+    // Sub Categories
+    blinds: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
+    walls: [0, 20, 40, 80, 100, 120, 140, 160, 180, 200],
+    carpets: [75, 150, 225, 300, 375, 450, 525, 600],
   });
 
   const [valueArrays, setValueArrays] = useState({
     stories: [1, 2, 3, 4],
-    rooms: [1, 2, 3, 4, 5, 6, 7, 8],
+    rooms: [ 1, 2, 3, 4, 5, 6, 7, 8],
     baths: [1, 2, 3, 4, 5, 6, 7, 8],
+    // Sub Categories
+    blinds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+    walls: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    carpets: [0, 1, 2, 3, 4, 5, 6, 7, 8]
   });
 
   const [propertyPriceData, setPropertyPriceData] = useState({
@@ -38,7 +46,7 @@ const Booking = () => {
     fridge: false,
     doubleFridge: false,
     living: false,
-    carpetClean: false,
+    carpetClean: 0,
     wallWash: 0,
     blinds: 0,
   });

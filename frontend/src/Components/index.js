@@ -11,3 +11,4 @@ export { default as Tag } from "./Tag/Tag";
 export { default as GridItem } from "./GridItem/GridItem";
 export { default as HouseSelectInput } from "./HouseSelectInput/HouseSelectInput";
 export { default as CheckBox } from "./CheckBox/CheckBox";
+export { default as Dropdown } from "./Dropdown/Dropdown";
