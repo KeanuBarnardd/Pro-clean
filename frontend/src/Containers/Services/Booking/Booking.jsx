@@ -6,7 +6,7 @@ const Booking = () => {
   const [priceArrays, setPriceArrays] = useState({
     stories: [100, 200, 300, 400],
     rooms: [75, 150, 225, 300, 375, 450, 525, 600],
-    baths: [50, 100, 150, 200, 250, 300, 350, 400],
+    baths: [75, 150, 225, 300, 375, 450, 525, 600],
   });
 
   const [valueArrays, setValueArrays] = useState({
@@ -17,7 +17,7 @@ const Booking = () => {
 
   const [propertyPriceData, setPropertyPriceData] = useState({
     storiesPrice: 0,
-    bedsPrice: 0,
+    roomsPrice: 0,
     bathsPrice: 0,
     balconiesPrice: 0,
     garagePrice: 0,
@@ -31,7 +31,7 @@ const Booking = () => {
   // Component 1 - Pass this down as a prop so we can access it in component 2
   const [propertyData, setPropertyData] = useState({
     stories: 0,
-    beds: 0,
+    rooms: 0,
     baths: 0,
     balconies: 0,
     garage: false,
