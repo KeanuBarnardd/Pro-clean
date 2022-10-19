@@ -1,0 +1,23 @@
+.house__select-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  p {
+    margin-bottom: 0.1rem;
+    color: var(--secondary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0.3rem;
+  }
+
+  .house__select-input {
+    //background-color: var(--grey-100);
+    color: var(--grey-600);
+    padding: 0.3rem;
+    font-size: 1rem;
+    border: none;
+    border-bottom: 2px solid var(--grey-300);
+    border-radius: 5px;
+  }
+}

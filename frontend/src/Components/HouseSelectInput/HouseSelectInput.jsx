@@ -12,6 +12,8 @@ const HouseSelectInput = ({
   textValue,
   addMultiple,
   styleType,
+  prompt,
+  icon
 }) => {
   const getSelectValue = (e) => {
     setPropertyData((data) => ({
@@ -30,13 +32,16 @@ const HouseSelectInput = ({
   };
 
   return (
-    <select className={`${styleType}`} onChange={getSelectValue}>
-      {valueArrays[valueType].map((item, id) => (
-        <option key={id} value={item}>
-          {item} {addMultiple && item !== 1 ? textValue + "s" : textValue}
-        </option>
-      ))}
-    </select>
+    <div className="house__select-container">
+      <p className="p-text"> <i className={`fa-solid ${icon}`}></i> {prompt}</p>
+      <select className={`house__select-input ${styleType}`} onChange={getSelectValue}>
+        {valueArrays[valueType].map((item, id) => (
+          <option key={id} value={item}>
+            {item} {addMultiple && item !== 1 ? textValue + "s" : textValue}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 };
 

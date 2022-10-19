@@ -1,0 +1,10 @@
+.dropdown__container {
+  .dropdown__container {
+    display: none;
+  }
+
+  .dropdown__container.active {
+    display: flex;
+    flex-direction: column;
+  }
+}
