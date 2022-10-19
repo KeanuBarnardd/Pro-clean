@@ -38,8 +38,10 @@
 
 
   /*Set Colours*/
+  --grey-000: #f3f5f7;
   --grey-100: #e9ecef;
   --grey-200: #dee2e6;
+  --grey-200-hover: #d1d6d6;
   --grey-300: #adb5bd;
   --grey-400: #6c757d;
   --grey-500: #495057;

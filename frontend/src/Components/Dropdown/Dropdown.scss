@@ -1,4 +1,13 @@
 .dropdown__container {
+
+
+  .dropdown__top-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: violet;
+  }
+
   .dropdown__container {
     display: none;
   }
@@ -6,5 +15,6 @@
   .dropdown__container.active {
     display: flex;
     flex-direction: column;
+    
   }
 }

@@ -1,17 +1,56 @@
 .detail__form {
   display: flex;
   flex-direction: column;
-
   .details__form-top-row {
     display: flex;
     gap: 30px;
-    margin-top: 1.3rem;
-    margin-bottom: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 100%;
-    margin-bottom: 40rem;
 
     @media screen and (max-width: 600px) {
       flex-direction: column;
+    }
+  }
+
+  .details__form-content {
+    display: flex;
+    gap: 20px;
+
+    .details__form-inclusions {
+      display: flex;
+      flex-direction: column;
+ 
+      width: 100%;
+      .content__title.one{
+        margin-bottom: 16px;
+      }
+      .inclusions__container{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    .extras__container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      max-width: 500px;
+      gap: 10px;
+
+      .checkbox__container {
+        width: 100%;
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        margin-bottom: 1rem;
+      }
+      .inputs__container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
     }
   }
 }

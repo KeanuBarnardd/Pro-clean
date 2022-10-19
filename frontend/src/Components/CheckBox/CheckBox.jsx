@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 import "./CheckBox.scss";
 
-const CheckBox = ({ setPropertyData, valueType }) => {
+const CheckBox = ({ setPropertyData, valueType, text }) => {
   const [toggleState, setToggleState] = useState(false);
 
   const toggleCheckBox = () => {
@@ -14,8 +14,14 @@ const CheckBox = ({ setPropertyData, valueType }) => {
   };
 
   return (
-    <button className={` ${toggleState ? "active" : ""}`} onClick={toggleCheckBox}>
-      {toggleState ?  <p>Check</p>: <p>Checked</p>}
+    <button className={`btn checkbox ${toggleState ? "" : "active"}`} onClick={toggleCheckBox}>
+      {toggleState ? (
+        <p>{text}</p>
+      ) : (
+        <p>
+          <i className="fa-solid fa-check"></i> {text}
+        </p>
+      )}
     </button>
   );
 };
