@@ -7,29 +7,29 @@ const DetailsForm = ({
   setPriceArrays,
   valueArrays,
   setValueArrays,
-  propertPriceData,
+  propertyPriceData,
   setPropertyPriceData,
   propertyData,
   setPropertyData,
 }) => {
+
+  // TIME TO MAKE THIS INTO A REPEATABLE COMPONENT
+
   const getSelectValue = (e) => {
     setPropertyData((data) => ({
       ...data,
-      // Change Stories to PROP-DATA-TYPE
       stories: e.target.value,
     }));
-
-    for (let x = 0; x < valueArrays.stories.length; x++) {
-      if (parseInt(e.target.value) === valueArrays.stories[x]) {
-        console.log(
-          `Select Value: ${e.target.value} Property Data : ${valueArrays.stories[x]} ITS A MATCH!`
-        );
+    for (let x = 0; x < valueArrays["stories"].length; x++) {
+      if (parseInt(e.target.value) === valueArrays["stories"][x]) {
+        const newPrice = priceArrays["stories"][x];
+        setPropertyPriceData((priceData) => ({
+          ...priceData,
+          storiesPrice: newPrice,
+        }));
       }
     }
   };
-
-  // Update the our price
-  const updatePrice = () => {};
 
   return (
     <div>
@@ -42,6 +42,7 @@ const DetailsForm = ({
         <option value="4">4 Story</option>
       </select>
       <p>{JSON.stringify(propertyData, null, 2)}</p>
+      <p>{JSON.stringify(propertyPriceData, null, 2)}</p>
     </div>
   );
 };

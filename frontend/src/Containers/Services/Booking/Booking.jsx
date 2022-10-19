@@ -4,9 +4,9 @@ import "./Booking.scss";
 
 const Booking = () => {
   const [priceArrays, setPriceArrays] = useState({
-    stories: [0, 100, 200, 300, 400],
-    rooms: [0, 75, 150, 225, 300, 375, 450, 525, 600],
-    baths: [0, 50, 100, 150, 200, 250, 300, 350, 400],
+    stories: [100, 200, 300, 400],
+    rooms: [75, 150, 225, 300, 375, 450, 525, 600],
+    baths: [50, 100, 150, 200, 250, 300, 350, 400],
   });
 
   const [valueArrays, setValueArrays] = useState({
@@ -28,7 +28,7 @@ const Booking = () => {
     wallWashPrice: 0,
     blindsPrice: 0,
   });
-  // Component 1 - Pass this down as a prop so we can access it in component 2 
+  // Component 1 - Pass this down as a prop so we can access it in component 2
   const [propertyData, setPropertyData] = useState({
     stories: 0,
     beds: 0,

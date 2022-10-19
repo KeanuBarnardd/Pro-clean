@@ -9,3 +9,5 @@ export { default as Banner } from "./Banner/Banner";
 export { default as MissionCard } from "./MissionCard/MissionCard";
 export { default as Tag } from "./Tag/Tag";
 export { default as GridItem } from "./GridItem/GridItem";
+export { default as HouseSelectInput } from "./HouseSelectInput/HouseSelectInput";
+export { default as CheckBox } from "./CheckBox/CheckBox";
