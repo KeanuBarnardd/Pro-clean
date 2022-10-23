@@ -199,6 +199,21 @@ const DetailsForm = ({
               icon={"fa-broom"}
               prompt="Do you want carpet cleaning, If so how many ? "
             />
+            <HouseSelectInput
+              styleType={"sub"}
+              priceArrays={priceArrays}
+              valueArrays={valueArrays}
+              propertyPriceData={propertyPriceData}
+              setPropertyPriceData={setPropertyPriceData}
+              propertyData={propertyData}
+              setPropertyData={setPropertyData}
+              valueType={"balconies"}
+              typePrice={"balconiesPrice"}
+              textValue={"Alfresco"}
+              addMultiple={true}
+              icon={"fa-broom"}
+              prompt="Do you want alfresco areas cleaned , If so how many ? "
+            />
 
             <HouseSelectInput
               styleType={"sub"}

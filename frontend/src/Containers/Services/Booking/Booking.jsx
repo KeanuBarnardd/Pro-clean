@@ -11,6 +11,7 @@ const Booking = () => {
     blinds: [0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150],
     walls: [0, 20, 40, 80, 100, 120, 140, 160, 180, 200],
     carpets: [75, 150, 225, 300, 375, 450, 525, 600],
+    balconies: [0, 20, 30, 40, 50],
   });
 
   const [valueArrays, setValueArrays] = useState({
@@ -21,6 +22,7 @@ const Booking = () => {
     blinds: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
     walls: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
     carpets: [0, 1, 2, 3, 4, 5, 6, 7, 8],
+    balconies: [0, 1, 2, 3, 4],
   });
 
   const [propertyPriceData, setPropertyPriceData] = useState({
@@ -46,13 +48,13 @@ const Booking = () => {
     fridge: false,
     doubleFridge: false,
     living: false,
-    carpetClean: 0,
-    wallWash: 0,
+    carpets: 0,
+    walls: 0,
     blinds: 0,
   });
 
   // DATE FORM CONTAINER
-  const [date, setData] = useState("00/00/0000");
+  const [date, setDate] = useState("00/00/0000");
   const [conditions, setConditions] = useState({
     userHome: "",
     propertyType: "",
@@ -62,12 +64,13 @@ const Booking = () => {
   const [userData, setUserData] = useState({
     firstName: "",
     lastName: "",
+    email: "",
     phone: "",
     address: "",
     suburb: "",
-    state: "",
     postcode: "",
     instructions: "",
+    abn: "",
   });
 
   const [priceTotal, setPriceTotal] = useState(0);
@@ -88,9 +91,36 @@ const Booking = () => {
           />
         </div>
       </div>
+      <div className="app__container app__flex  bg-grey">
+        <div className="app__container-width">
+          <DateForm setDate={setDate} setConditions={setConditions} conditions={conditions} />
+        </div>
+      </div>
       <div className="app__container app__flex">
         <div className="app__container-width">
-          <DateForm/>
+          <UserForm userData={userData} setUserData={setUserData} />
+        </div>
+      </div>
+      <div className="app__container app__flex">
+        <div className="app__container-width">
+          <p className="content__title">
+            <span>Final Step</span>
+          </p>
+          <h1 className="head-text">Confirm & Submit</h1>
+          <div className="receipt__container">
+            <h2>Booking Details</h2>
+            <ul className="receipt__list">
+              <li className="p-text">
+                How many Story : <span>{`${propertyData.stories}`}</span>
+              </li>
+              <li className="p-text">How many bedrooms : {`${propertyData.rooms}`}</li>
+              <li className="p-text">How many bathrooms : {`${propertyData.baths}`}</li>
+              <li className="p-text">Date of Booking* : {`${date}`}</li>
+              <li className="p-text">Will you be home : {`${conditions.userHome}`}</li>
+              <li className="p-text">How many Story : {`${conditions.propertyType}`}</li>
+              <li className="p-text">How many Story : {`${conditions.powerAvailable}`}</li>
+            </ul>
+          </div>
         </div>
       </div>
     </>

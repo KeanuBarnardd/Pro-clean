@@ -1,0 +1,12 @@
+.date__row-container {
+  display: flex;
+  display: flex;
+  gap: 30px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+  }
+}
+
