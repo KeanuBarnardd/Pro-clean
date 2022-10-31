@@ -99,28 +99,12 @@ const Booking = () => {
       <div className="app__container app__flex">
         <div className="app__container-width">
           <UserForm userData={userData} setUserData={setUserData} />
-        </div>
-      </div>
-      <div className="app__container app__flex">
-        <div className="app__container-width">
-          <p className="content__title">
-            <span>Final Step</span>
+          <p id="p" className="p-text text-center">
+            Submit your request at we will send you an email confirmation, along with the price of your quote. 
           </p>
-          <h1 className="head-text">Confirm & Submit</h1>
-          <div className="receipt__container">
-            <h2>Booking Details</h2>
-            <ul className="receipt__list">
-              <li className="p-text">
-                How many Story : <span>{`${propertyData.stories}`}</span>
-              </li>
-              <li className="p-text">How many bedrooms : {`${propertyData.rooms}`}</li>
-              <li className="p-text">How many bathrooms : {`${propertyData.baths}`}</li>
-              <li className="p-text">Date of Booking* : {`${date}`}</li>
-              <li className="p-text">Will you be home : {`${conditions.userHome}`}</li>
-              <li className="p-text">How many Story : {`${conditions.propertyType}`}</li>
-              <li className="p-text">How many Story : {`${conditions.powerAvailable}`}</li>
-            </ul>
-          </div>
+          <button className="submit__btn btn btn-secondary">
+            Request quote
+          </button>
         </div>
       </div>
     </>
