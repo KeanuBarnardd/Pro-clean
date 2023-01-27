@@ -8,7 +8,7 @@ const UpholsteryCleaning = () => {
   return (
     <>
       <Banner
-        title={"Upholstery Cleaning"}
+        title={"Furniture Cleaning"}
         button="Book now"
         link={"/booking"}
         text={
@@ -24,7 +24,7 @@ const UpholsteryCleaning = () => {
           <p className="content__title">
             <span>Furniture</span>
           </p>
-          <h1 className="head-text">What is included in upholstery restoration</h1>
+          <h1 className="head-text">What is included in Furniture restoration</h1>
           <div className="grid__container">
             <InfoCard
               title={"Tables & Stands"}

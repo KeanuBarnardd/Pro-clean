@@ -112,9 +112,9 @@ const MobileNavbar = () => {
                 setToggleMobileNav(false);
               }}
               className="sub-nav-link mobile"
-              to={"/upholsteryCleaning"}
+              to={"/furnitureCleaning"}
             >
-              <p> Upholstery cleaning</p>
+              <p> Furniture cleaning</p>
             </Link>
           </div>
         </div>

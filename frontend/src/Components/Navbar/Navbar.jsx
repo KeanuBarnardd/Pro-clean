@@ -55,9 +55,9 @@ const Navbar = () => {
                     <i className="fa-solid fa-calendar-check"></i>
                     Lease cleaning
                   </Link>
-                  <Link className="sub-nav-link" to={"/upholsteryCleaning"}>
+                  <Link className="sub-nav-link" to={"/furnitureCleaning"}>
                     <i className="fa-solid fa-chair"></i>
-                    Upholstery cleaning
+                    Furniture cleaning
                   </Link>
                 </div>
                 <Link className="booking-btn" to={"/booking"}>

@@ -37,7 +37,7 @@ const App = () => {
           <Route path="commercialCleaning" element={<CommercialCleaning />} />
           <Route path="homeCleaning" element={<HomeCleaning />} />
           <Route path="leaseCleaning" element={<LeaseCleaning />} />
-          <Route path="upholsteryCleaning" element={<UpholsteryCleaning />} />
+          <Route path="furnitureCleaning" element={<UpholsteryCleaning />} />
         </Routes>
         <Footer></Footer>
       </div>
